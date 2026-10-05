@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+
+/* SimpleLightbox */
+div.sl-overlay {
+  background: #2e2f42;
+  opacity: 0.8;
+}
+
+.sl-wrapper.simple-lightbox .sl-close,
+.sl-wrapper.simple-lightbox .sl-counter,
+.sl-wrapper.simple-lightbox .sl-navigation button {
+  color: #fff;
+}
